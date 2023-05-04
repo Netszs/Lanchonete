@@ -1,0 +1,9 @@
+.pedido{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#salvar{
+  display: inline-block;
+  margin: 15px;
+}

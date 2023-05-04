@@ -1,0 +1,102 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Pedido</mat-card-title>
+  </mat-card-header>
+  <br />
+  <mat-card-content>
+    <form class="example-form">
+      <div class="pedido">
+        <mat-form-field appearance="fill">
+          <mat-label>Pedido</mat-label>
+          <input
+            matInput
+            placeholder="Pedido"
+            name="pedido"
+            [(ngModel)]="cliente.pedido"
+          />
+        </mat-form-field>
+        </div>
+        
+        <mat-form-field fxFlex="50%">
+          <mat-label>Descrição</mat-label>
+          <input
+            matInput
+            placeholder="descricao"
+            name="descricao"
+            [(ngModel)]="cliente.descricao"
+          />
+        </mat-form-field>
+      
+
+      <div>
+        <mat-form-field>
+          <mat-label>Número Pedido</mat-label>
+          <input
+            matInput
+            placeholder="numeroPedido"
+            name="numeroPedido"
+            [(ngModel)]="cliente.numeroPedido"
+          />
+        </mat-form-field>
+      </div>
+      
+      <br />
+      <br />
+
+      <div class="pedido">
+        <mat-form-field>
+          <mat-label>Logradouro</mat-label>
+          <input
+            matInput
+            placeholder="Logradouro"
+            name="logradouro"
+            [(ngModel)]="cliente.endereco.logradouro"
+          />
+        </mat-form-field>
+      </div>
+
+        <mat-form-field>
+          <mat-label>Numero</mat-label>
+          <input
+            matInput
+            placeholder="Numero"
+            name="numero"
+            [(ngModel)]="cliente.endereco.numero"
+          />
+        </mat-form-field>
+      <br />
+
+      <div class="pedido">
+        <mat-form-field>
+          <mat-label>Bairro</mat-label>
+          <input
+            matInput
+            placeholder="Bairro"
+            name="bairro"
+            [(ngModel)]="cliente.endereco.bairro"
+          />
+        </mat-form-field>
+      </div>
+
+        <mat-form-field>
+          <mat-label>Cidade</mat-label>
+          <input
+            matInput
+            placeholder="cidade"
+            name="cidade"
+            [(ngModel)]="cliente.endereco.cidade"
+          />
+        </mat-form-field>
+      
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <button id="salvar" mat-raised-button color="primary" (click)="salvar()">
+      Salvar
+    </button>
+    <button mat-raised-button color="secundary" (click)="voltar()">
+      Voltar
+    </button>
+
+  </mat-card-footer>
+</mat-card>
